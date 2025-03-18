@@ -12,12 +12,11 @@ pipeline {
                 script {
                     sh 'npm ci'
                     sh 'npx cucumber-js --config cucumber.js --format json:reports/cucumber-report.json'
-
                 }
             }
-
         }
     }
+
 post {
     always {
         cucumber buildStatus: 'UNSTABLE',
@@ -30,7 +29,7 @@ post {
                         [key: 'Submitter', value: '${GERRIT_PATCHSET_UPLOADER_NAME}']
                 ],
                 reportTitle: 'My report',
-                fileIncludePattern: '**/*.json',
+                fileIncludePattern: 'reports/cucumber-report.json',
                 sortingMethod: 'ALPHABETICAL',
                 trendsLimit: 100
     }
