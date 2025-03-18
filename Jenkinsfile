@@ -30,7 +30,7 @@ post {
                         [key: 'Submitter', value: '${GERRIT_PATCHSET_UPLOADER_NAME}']
                 ],
                 reportTitle: 'My report',
-                fileIncludePattern: 'reports/cucumber-report.json',
+                fileIncludePattern: 'reports/**/**.json',
                 sortingMethod: 'ALPHABETICAL',
                 trendsLimit: 100
     }
