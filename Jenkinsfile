@@ -10,28 +10,33 @@ pipeline {
 
             steps {
                 script {
+                    // Crée le répertoire reports
+                    sh 'mkdir -p reports'
+                    // Installer les dépendances et exécuter Cucumber avec génération de rapport JSON
                     sh 'npm ci'
                     sh 'npx cucumber-js --format json:reports/cucumber-report.json'
                 }
             }
         }
     }
+    post {
+        always {
+            // Vérifie que le fichier JSON a bien été généré
+            sh 'ls -al reports/'  // Afficher le contenu du répertoire reports
 
-post {
-    always {
-        cucumber buildStatus: 'UNSTABLE',
-                failedFeaturesNumber: 1,
-                failedScenariosNumber: 1,
-                skippedStepsNumber: 1,
-                failedStepsNumber: 1,
-                classifications: [
-                        [key: 'Commit', value: '<a href="${GERRIT_CHANGE_URL}">${GERRIT_PATCHSET_REVISION}</a>'],
-                        [key: 'Submitter', value: '${GERRIT_PATCHSET_UPLOADER_NAME}']
-                ],
-                reportTitle: 'My report',
-                fileIncludePattern: 'reports/cucumber-report.json',
-                sortingMethod: 'ALPHABETICAL',
-                trendsLimit: 100
+            cucumber buildStatus: 'UNSTABLE',
+                    failedFeaturesNumber: 1,
+                    failedScenariosNumber: 1,
+                    skippedStepsNumber: 1,
+                    failedStepsNumber: 1,
+                    classifications: [
+                            [key: 'Commit', value: '<a href="${GERRIT_CHANGE_URL}">${GERRIT_PATCHSET_REVISION}</a>'],
+                            [key: 'Submitter', value: '${GERRIT_PATCHSET_UPLOADER_NAME}']
+                    ],
+                    reportTitle: 'My report',
+                    fileIncludePattern: 'reports/cucumber-report.json', // Corrige le chemin d'inclusion
+                    sortingMethod: 'ALPHABETICAL',
+                    trendsLimit: 100
+        }
     }
-}
 }
