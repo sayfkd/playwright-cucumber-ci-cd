@@ -4,288 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "dashboard;create-post-button",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Create post button",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 848366616
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I open the login page",
-            "match": {
-              "location": "step-definitions/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1050840111
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
-            "match": {
-              "location": "step-definitions/login.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 818276724
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "I should be redirected to the dashboard",
-            "match": {
-              "location": "step-definitions/login.steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 23862514
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 11,
-            "name": "Je suis sur le dashboard",
-            "match": {
-              "location": "step-definitions/dashboard.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9706868
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "je clique sur le bouton add post",
-            "match": {
-              "location": "step-definitions/dashboard.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 194689021
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "je suis redirige vers la page de creation de post",
-            "match": {
-              "location": "step-definitions/dashboard.steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 423481604
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 60168437
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dashboard",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "dashboard",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Dashboard",
-    "tags": [],
-    "uri": "features/dashboard.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "login;successful-login",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Successful login",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 369989666
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I open the login page",
-            "match": {
-              "location": "step-definitions/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 487226654
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
-            "match": {
-              "location": "step-definitions/login.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 830708625
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "I should be redirected to the dashboard",
-            "match": {
-              "location": "step-definitions/login.steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 24406312
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 48383173
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@valid",
-            "line": 3
-          },
-          {
-            "name": "@Integration",
-            "line": 3
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;failed-login-with-wrong-credentials",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Failed login with wrong credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 382668481
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 11,
-            "name": "I open the login page",
-            "match": {
-              "location": "step-definitions/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 788391232
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "I login with username \"Admin\" and password \"wrongpassword\"",
-            "match": {
-              "location": "step-definitions/login.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 766101505
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I should see an error message",
-            "match": {
-              "location": "step-definitions/login.steps.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 33172599
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 55094472
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@invalid",
-            "line": 9
-          },
-          {
-            "name": "@Intergration",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
-    "tags": [],
-    "uri": "features/login.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "post;create-post-button",
         "keyword": "Scenario",
         "line": 9,
@@ -296,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 480606922
+              "duration": 379409556
             }
           },
           {
@@ -308,8 +26,9 @@
               "location": "step-definitions/login.steps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 791657952
+              "status": "failed",
+              "duration": 5004437003,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/sayf/Documents/LOGWIRE/playwright-cucumber-typescript-template-main/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
             }
           },
           {
@@ -321,8 +40,8 @@
               "location": "step-definitions/login.steps.ts:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 1502479724
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -334,8 +53,8 @@
               "location": "step-definitions/login.steps.ts:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 36111753
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -347,8 +66,8 @@
               "location": "step-definitions/dashboard.steps.ts:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 13621377
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -360,8 +79,8 @@
               "location": "step-definitions/dashboard.steps.ts:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 163115741
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -373,8 +92,8 @@
               "location": "step-definitions/dashboard.steps.ts:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 387228793
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -386,8 +105,8 @@
               "location": "step-definitions/post.steps.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 326974961
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -399,8 +118,8 @@
               "location": "step-definitions/post.steps.ts:14"
             },
             "result": {
-              "status": "passed",
-              "duration": 38303395
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -408,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 72029511
+              "duration": 282442685
             }
           }
         ],
