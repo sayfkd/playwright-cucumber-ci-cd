@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js"
+    "test": "npx cucumber-js",
+    "only": "npm run cucumber -- --tags"
   },
   "keywords": [],
   "author": "",
