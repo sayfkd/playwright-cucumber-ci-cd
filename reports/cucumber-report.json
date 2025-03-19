@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2108427156
+              "duration": 1859360614
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 652066475
+              "duration": 582188266
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 5,
             "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
             "match": {
-              "location": "step-definitions/login.steps.ts:14"
+              "location": "step-definitions/login.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 781202288
+              "duration": 735369537
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "I should be redirected to the dashboard",
             "match": {
-              "location": "step-definitions/login.steps.ts:18"
+              "location": "step-definitions/login.steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 22917022
+              "duration": 16772170
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11709213
+              "duration": 12985435
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 228296973
+              "duration": 250617581
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375557181
+              "duration": 381857782
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 318304755
+              "duration": 321807996
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23590292
+              "duration": 25186480
             }
           },
           {
@@ -126,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 268651747
+              "duration": 301295734
             }
           }
         ],

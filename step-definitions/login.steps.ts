@@ -7,7 +7,13 @@ let loginPage: LoginPage;
 
 Given('I open the login page', async function () {
     loginPage = new LoginPage(this.page); 
-    await loginPage.goto();
+    await loginPage.goto('https://58g6w7d4-9091.uks1.devtunnels.ms/admin/login/?next=/admin/');
+    await loginPage.clickContinue();
+});
+
+Given('I open the login page 2', async function () {
+    loginPage = new LoginPage(this.page); 
+    await loginPage.goto('https://58g6w7d4-9092.uks1.devtunnels.ms/admin/login/?next=/admin/');
     await loginPage.clickContinue();
 });
 
