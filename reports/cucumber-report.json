@@ -4,6 +4,296 @@
     "elements": [
       {
         "description": "",
+        "id": "dashboard;create-post-button",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Create post button",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2287092270
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the login page",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 716307166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 810992760
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "step-definitions/login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16605767
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Je suis sur le dashboard",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6437772
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "je clique sur le bouton add post",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237103035
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "je suis redirige vers la page de creation de post",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 376331868
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 364898064
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard",
+            "line": 9
+          },
+          {
+            "name": "@env1",
+            "line": 9
+          },
+          {
+            "name": "@env2",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dashboard",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Dashboard",
+    "tags": [],
+    "uri": "features/dashboard.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;successful-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1831651444
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the login page",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 621889885
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021085612
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "step-definitions/login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20729953
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 245136442
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid",
+            "line": 3
+          },
+          {
+            "name": "@env1",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;failed-login-with-wrong-credentials",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Failed login with wrong credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1580237226
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open the login page",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650119827
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I login with username \"Admin\" and password \"wrongpassword\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 821583547
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message",
+            "match": {
+              "location": "step-definitions/login.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39606616
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 234550677
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid",
+            "line": 9
+          },
+          {
+            "name": "@env1",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "post;create-post-button",
         "keyword": "Scenario",
         "line": 9,
@@ -14,7 +304,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1859360614
+              "duration": 1469708671
             }
           },
           {
@@ -27,7 +317,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 582188266
+              "duration": 611685342
             }
           },
           {
@@ -40,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 735369537
+              "duration": 703926598
             }
           },
           {
@@ -53,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16772170
+              "duration": 26219139
             }
           },
           {
@@ -66,7 +356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12985435
+              "duration": 16355145
             }
           },
           {
@@ -79,7 +369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 250617581
+              "duration": 271681476
             }
           },
           {
@@ -92,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 381857782
+              "duration": 370981243
             }
           },
           {
@@ -105,7 +395,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 321807996
+              "duration": 325205924
             }
           },
           {
@@ -118,7 +408,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25186480
+              "duration": 24468752
             }
           },
           {
@@ -126,13 +416,21 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 301295734
+              "duration": 230729221
             }
           }
         ],
         "tags": [
           {
             "name": "@post",
+            "line": 8
+          },
+          {
+            "name": "@env1",
+            "line": 8
+          },
+          {
+            "name": "@env2",
             "line": 8
           }
         ],

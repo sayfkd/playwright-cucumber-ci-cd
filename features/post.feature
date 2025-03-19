@@ -5,7 +5,7 @@ Feature: Post
     When I login with username "testeur_integration" and password "testeur_qa"
     Then I should be redirected to the dashboard
 
-  @post
+  @post @env1 @env2
   Scenario: Create post button
     Given Je suis sur le dashboard
     And je clique sur le bouton add post
