@@ -14,7 +14,7 @@ Given('I open the login page', async function () {
 Given('I open the login page 2', async function () {
     loginPage = new LoginPage(this.page); 
     await loginPage.goto('https://58g6w7d4-9091.uks1.devtunnels.ms/admin/login/?next=/admin/');
-    //await loginPage.clickContinue();
+    await loginPage.clickContinue();
 });
 
 When('I login with username {string} and password {string}', async function (username: string, password: string) {

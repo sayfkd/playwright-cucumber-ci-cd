@@ -18,7 +18,7 @@ pipeline {
                     sh 'npx cucumber-js --format json:reports/cucumber-report.json'
                     //sh "npx cucumber-js --tags @${params.ENVIRONMENT} --format json:reports/cucumber-report.json"
                     //sh 'npx cucumber-js'
-                    stash name: 'allure-results', includes: 'allure-results/*'
+                    //stash name: 'allure-results', includes: 'allure-results/*'
                 }
             }
         }
