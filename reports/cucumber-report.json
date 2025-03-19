@@ -6,7 +6,7 @@
         "description": "",
         "id": "login;successful-login",
         "keyword": "Scenario Outline",
-        "line": 15,
+        "line": 11,
         "name": "Successful login",
         "steps": [
           {
@@ -14,33 +14,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2598903038
+              "duration": 829554781
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I open the login page for \"env2\"",
+            "name": "I open the login page for \"env1\"",
             "match": {
               "location": "step-definitions/login.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1303024828
+              "duration": 1054186964
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I login with username \"testeur_recette\" and password \"testeur_qa_3\"",
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
             "match": {
               "location": "step-definitions/login.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 1089309815
+              "duration": 893337548
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31824720
+              "duration": 32452247
             }
           },
           {
@@ -61,14 +61,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 385607958
+              "duration": 64882350
             }
           }
         ],
         "tags": [
           {
-            "name": "@env2",
-            "line": 12
+            "name": "@env1",
+            "line": 8
           }
         ],
         "type": "scenario"
@@ -77,7 +77,7 @@
         "description": "",
         "id": "login;successful-login",
         "keyword": "Scenario Outline",
-        "line": 16,
+        "line": 12,
         "name": "Successful login",
         "steps": [
           {
@@ -85,33 +85,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1747031252
+              "duration": 352976437
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I open the login page for \"env2\"",
+            "name": "I open the login page for \"env1\"",
             "match": {
               "location": "step-definitions/login.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 883961413
+              "duration": 436684567
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I login with username \"testeur_recette\" and password \"testeur_qa_4\"",
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa_2\"",
             "match": {
               "location": "step-definitions/login.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 647689288
+              "duration": 566199801
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27289236
+              "duration": 23150311
             }
           },
           {
@@ -132,14 +132,164 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 358194528
+              "duration": 63584608
             }
           }
         ],
         "tags": [
           {
-            "name": "@env2",
-            "line": 12
+            "name": "@env1",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;failed-login-with-wrong-credentials",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Failed login with wrong credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 423585144
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I open the login page for \"env1\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 463826726
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I login with username \"faux\" and password \"testeur_qa\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 668486659
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see an error message",
+            "match": {
+              "location": "step-definitions/login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27413902
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48023929
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalids",
+            "line": 20
+          },
+          {
+            "name": "@env1",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;failed-login-with-wrong-credentials",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Failed login with wrong credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 357072478
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I open the login page for \"env1\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 403906079
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I login with username \"testeur_integration\" and password \"faux\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 592942895
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see an error message",
+            "match": {
+              "location": "step-definitions/login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29615681
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48927364
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalids",
+            "line": 20
+          },
+          {
+            "name": "@env1",
+            "line": 26
           }
         ],
         "type": "scenario"
@@ -158,8 +308,8 @@
       {
         "description": "",
         "id": "post;create-post-button",
-        "keyword": "Scenario",
-        "line": 15,
+        "keyword": "Scenario Outline",
+        "line": 17,
         "name": "Create post button",
         "steps": [
           {
@@ -167,111 +317,111 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1724179573
+              "duration": 356707109
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 16,
-            "name": "I open the login page for \"env2\"",
+            "line": 5,
+            "name": "I open the login page for \"env1\"",
             "match": {
               "location": "step-definitions/login.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 892944263
+              "duration": 457415460
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
-            "name": "I login with username \"testeur_recette\" and password \"testeur_qa_3\"",
+            "line": 6,
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
             "match": {
               "location": "step-definitions/login.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 976672128
+              "duration": 698303838
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 7,
             "name": "I should be redirected to the dashboard",
             "match": {
               "location": "step-definitions/login.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 20461577
+              "duration": 26659746
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 19,
+            "line": 8,
             "name": "Je suis sur le dashboard",
             "match": {
               "location": "step-definitions/dashboard.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 17688601
+              "duration": 11071949
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 9,
             "name": "je clique sur le bouton add post",
             "match": {
               "location": "step-definitions/dashboard.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 281634475
+              "duration": 125740901
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
+            "line": 10,
             "name": "je suis redirige vers la page de creation de post",
             "match": {
               "location": "step-definitions/dashboard.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 389967222
+              "duration": 383908171
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 11,
             "name": "je creer un post avec \"super titre\" et \"super content\" et je clique sur le bouton save",
             "match": {
               "location": "step-definitions/post.steps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 432126174
+              "duration": 260109507
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 12,
             "name": "je vois mon super post dans la liste des posts",
             "match": {
               "location": "step-definitions/post.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 36762621
+              "duration": 31040347
             }
           },
           {
@@ -279,17 +429,17 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 354772933
+              "duration": 54233261
             }
           }
         ],
         "tags": [
           {
             "name": "@post",
-            "line": 14
+            "line": 3
           },
           {
-            "name": "@env2",
+            "name": "@env1",
             "line": 14
           }
         ],

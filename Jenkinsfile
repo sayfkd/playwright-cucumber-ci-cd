@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice(name: 'ENVIRONMENT', choices: ['env1', 'env2'], description: 'Sélectionnez l\'environnement')
+        choice(name: 'ENVIRONMENT', choices: ['env1', 'env2', 'all'], description: 'Sélectionnez l\'environnement')
     }
     stages {
         stage('build and install') {
@@ -15,10 +15,16 @@ pipeline {
                 script {
                     //sh 'mkdir -p reports'
                     sh 'npm ci'
+                    
+                    if (params.ENVIRONMENT == 'all') {
+                        sh 'npx cucumber-js --config cucumber.js'
+                    } else {
+                        sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
+                    }
                     //sh 'npx cucumber-js --format json:reports/cucumber-report.json'
                     //sh "npx cucumber-js --tags @${params.ENVIRONMENT} --format json:reports/cucumber-report.json"
                     //sh 'npx cucumber-js'
-                    sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
+                    //sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
                     stash name: 'allure-results', includes: 'allure-results/*'
                 }
             }
