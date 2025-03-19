@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 829554781
+              "duration": 696120291
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1054186964
+              "duration": 816390854
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 893337548
+              "duration": 906401012
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32452247
+              "duration": 85951954
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64882350
+              "duration": 131979485
             }
           }
         ],
@@ -85,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 352976437
+              "duration": 519871780
             }
           },
           {
@@ -98,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 436684567
+              "duration": 492608771
             }
           },
           {
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 566199801
+              "duration": 657490340
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23150311
+              "duration": 28938254
             }
           },
           {
@@ -132,7 +132,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63584608
+              "duration": 67751242
             }
           }
         ],
@@ -156,7 +156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 423585144
+              "duration": 426733449
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 463826726
+              "duration": 446469100
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 668486659
+              "duration": 547254070
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27413902
+              "duration": 37122849
             }
           },
           {
@@ -203,7 +203,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48023929
+              "duration": 63633593
             }
           }
         ],
@@ -231,7 +231,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 357072478
+              "duration": 426234246
             }
           },
           {
@@ -244,7 +244,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 403906079
+              "duration": 454888709
             }
           },
           {
@@ -257,7 +257,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 592942895
+              "duration": 764553733
             }
           },
           {
@@ -270,7 +270,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29615681
+              "duration": 27113454
             }
           },
           {
@@ -278,7 +278,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48927364
+              "duration": 65169017
             }
           }
         ],
@@ -317,7 +317,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 356707109
+              "duration": 475955260
             }
           },
           {
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 457415460
+              "duration": 403078166
             }
           },
           {
@@ -343,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 698303838
+              "duration": 622701782
             }
           },
           {
@@ -356,7 +356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26659746
+              "duration": 23265697
             }
           },
           {
@@ -369,7 +369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11071949
+              "duration": 24386565
             }
           },
           {
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 125740901
+              "duration": 138213732
             }
           },
           {
@@ -395,7 +395,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 383908171
+              "duration": 384848667
             }
           },
           {
@@ -408,7 +408,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 260109507
+              "duration": 160133273
             }
           },
           {
@@ -421,7 +421,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31040347
+              "duration": 405260
             }
           },
           {
@@ -429,18 +429,298 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 54233261
+              "duration": 53165096
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@postcreate",
+            "line": 3
+          },
+          {
+            "name": "@env1",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "post;create-post-button",
+        "keyword": "Scenario Outline",
+        "line": 38,
+        "name": "Create post button",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 336646572
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I open the login page for \"env1\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 434821157
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 903656372
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "step-definitions/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20549726
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "Je suis sur le dashboard",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8574785
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "je clique sur le bouton add post",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175069769
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "je suis redirige vers la page de creation de post",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 381434522
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "je creer un post avec \"\" et \"super content\" et je clique sur le bouton save",
+            "match": {
+              "location": "step-definitions/post.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185515730
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "un message derreur saffiche",
+            "match": {
+              "location": "step-definitions/post.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101924847
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52947045
             }
           }
         ],
         "tags": [
           {
             "name": "@post",
-            "line": 3
+            "line": 24
           },
           {
             "name": "@env1",
-            "line": 14
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "post;create-post-button",
+        "keyword": "Scenario Outline",
+        "line": 59,
+        "name": "Create post button",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 350837771
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "I open the login page for \"env1\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650570511
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I login with username \"testeur_integration\" and password \"testeur_qa\"",
+            "match": {
+              "location": "step-definitions/login.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712715288
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "I should be redirected to the dashboard",
+            "match": {
+              "location": "step-definitions/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26486084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "Je suis sur le dashboard",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9223146
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "je clique sur le bouton add post",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131573410
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "je suis redirige vers la page de creation de post",
+            "match": {
+              "location": "step-definitions/dashboard.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 379077181
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "je creer un post avec \"titre\" et \"\" et je clique sur le bouton save",
+            "match": {
+              "location": "step-definitions/post.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192099759
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "un message derreur saffiche",
+            "match": {
+              "location": "step-definitions/post.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 197630533
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50219915
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@post",
+            "line": 45
+          },
+          {
+            "name": "@env1",
+            "line": 56
           }
         ],
         "type": "scenario"
