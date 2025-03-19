@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice(name: 'ENVIRONMENT', choices: ['post', 'Integration'], description: 'Sélectionnez l\'environnement')
+        choice(name: 'ENVIRONMENT', choices: ['env1', 'env2'], description: 'Sélectionnez l\'environnement')
     }
     stages {
         stage('build and install') {
