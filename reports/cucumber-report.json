@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1468869979
+              "duration": 2108427156
             }
           },
           {
@@ -26,9 +26,8 @@
               "location": "step-definitions/login.steps.ts:8"
             },
             "result": {
-              "status": "failed",
-              "duration": 5007989596,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/sayf/Documents/LOGWIRE/playwright-cucumber-typescript-template-main/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 652066475
             }
           },
           {
@@ -40,8 +39,8 @@
               "location": "step-definitions/login.steps.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 781202288
             }
           },
           {
@@ -53,8 +52,8 @@
               "location": "step-definitions/login.steps.ts:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 22917022
             }
           },
           {
@@ -66,8 +65,8 @@
               "location": "step-definitions/dashboard.steps.ts:8"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 11709213
             }
           },
           {
@@ -79,8 +78,8 @@
               "location": "step-definitions/dashboard.steps.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 228296973
             }
           },
           {
@@ -92,8 +91,8 @@
               "location": "step-definitions/dashboard.steps.ts:18"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 375557181
             }
           },
           {
@@ -105,8 +104,8 @@
               "location": "step-definitions/post.steps.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 318304755
             }
           },
           {
@@ -118,8 +117,8 @@
               "location": "step-definitions/post.steps.ts:14"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 23590292
             }
           },
           {
@@ -127,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 123646693
+              "duration": 268651747
             }
           }
         ],

@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    parameters {
+        choice(name: 'ENVIRONMENT', choices: ['post', 'Integration'], description: 'Sélectionnez l\'environnement')
+    }
     stages {
         stage('build and install') {
             agent {
@@ -12,8 +15,8 @@ pipeline {
                 script {
                     sh 'mkdir -p reports'
                     sh 'npm ci'
-                    sh 'npx cucumber-js --format json:reports/cucumber-report.json'
-                    //sh 'allure generate ./allure-results -o ./allure-report'
+                    //sh 'npx cucumber-js --format json:reports/cucumber-report.json'
+                     sh "npx cucumber-js --tags @${params.ENVIRONMENT} --format json:reports/cucumber-report.json"
                     stash name: 'allure-results', includes: 'allure-results/*'
                 }
             }
