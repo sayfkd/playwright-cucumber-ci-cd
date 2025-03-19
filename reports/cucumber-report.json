@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 696120291
+              "duration": 797968426
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 816390854
+              "duration": 776956545
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 906401012
+              "duration": 694636855
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 85951954
+              "duration": 24834619
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 131979485
+              "duration": 70020340
             }
           }
         ],
@@ -85,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 519871780
+              "duration": 353408043
             }
           },
           {
@@ -98,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 492608771
+              "duration": 437122113
             }
           },
           {
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 657490340
+              "duration": 525755672
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28938254
+              "duration": 32638682
             }
           },
           {
@@ -132,7 +132,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67751242
+              "duration": 58277334
             }
           }
         ],
@@ -156,7 +156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 426733449
+              "duration": 401654550
             }
           },
           {
@@ -169,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 446469100
+              "duration": 802057480
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 547254070
+              "duration": 520594466
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 37122849
+              "duration": 29719090
             }
           },
           {
@@ -203,7 +203,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63633593
+              "duration": 63974436
             }
           }
         ],
@@ -231,7 +231,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 426234246
+              "duration": 355294222
             }
           },
           {
@@ -244,7 +244,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 454888709
+              "duration": 615793409
             }
           },
           {
@@ -257,7 +257,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 764553733
+              "duration": 799972511
             }
           },
           {
@@ -270,7 +270,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27113454
+              "duration": 27930951
             }
           },
           {
@@ -278,7 +278,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 65169017
+              "duration": 51489794
             }
           }
         ],
@@ -317,7 +317,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 475955260
+              "duration": 355354346
             }
           },
           {
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 403078166
+              "duration": 528699466
             }
           },
           {
@@ -343,7 +343,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 622701782
+              "duration": 770006811
             }
           },
           {
@@ -356,7 +356,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23265697
+              "duration": 21469587
             }
           },
           {
@@ -369,7 +369,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24386565
+              "duration": 10558558
             }
           },
           {
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138213732
+              "duration": 211653312
             }
           },
           {
@@ -395,7 +395,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384848667
+              "duration": 390073709
             }
           },
           {
@@ -404,11 +404,11 @@
             "line": 11,
             "name": "je creer un post avec \"super titre\" et \"super content\" et je clique sur le bouton save",
             "match": {
-              "location": "step-definitions/post.steps.ts:9"
+              "location": "step-definitions/post.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 160133273
+              "duration": 220247779
             }
           },
           {
@@ -417,11 +417,11 @@
             "line": 12,
             "name": "je vois mon super post dans la liste des posts",
             "match": {
-              "location": "step-definitions/post.steps.ts:14"
+              "location": "step-definitions/post.steps2.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 405260
+              "duration": 481223
             }
           },
           {
@@ -429,7 +429,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 53165096
+              "duration": 55139703
             }
           }
         ],
@@ -457,7 +457,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 336646572
+              "duration": 384092998
             }
           },
           {
@@ -470,7 +470,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 434821157
+              "duration": 557420758
             }
           },
           {
@@ -483,7 +483,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 903656372
+              "duration": 847101124
             }
           },
           {
@@ -496,7 +496,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 20549726
+              "duration": 20571292
             }
           },
           {
@@ -509,7 +509,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8574785
+              "duration": 9930315
             }
           },
           {
@@ -522,7 +522,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 175069769
+              "duration": 152245662
             }
           },
           {
@@ -535,7 +535,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 381434522
+              "duration": 378924981
             }
           },
           {
@@ -544,11 +544,11 @@
             "line": 32,
             "name": "je creer un post avec \"\" et \"super content\" et je clique sur le bouton save",
             "match": {
-              "location": "step-definitions/post.steps.ts:9"
+              "location": "step-definitions/post.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 185515730
+              "duration": 236529967
             }
           },
           {
@@ -557,11 +557,11 @@
             "line": 33,
             "name": "un message derreur saffiche",
             "match": {
-              "location": "step-definitions/post.steps.ts:20"
+              "location": "step-definitions/post.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 101924847
+              "duration": 107259836
             }
           },
           {
@@ -569,7 +569,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 52947045
+              "duration": 50931848
             }
           }
         ],
@@ -597,7 +597,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 350837771
+              "duration": 357306341
             }
           },
           {
@@ -610,7 +610,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 650570511
+              "duration": 454565699
             }
           },
           {
@@ -623,7 +623,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 712715288
+              "duration": 729361841
             }
           },
           {
@@ -636,7 +636,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26486084
+              "duration": 23533465
             }
           },
           {
@@ -649,7 +649,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9223146
+              "duration": 21651659
             }
           },
           {
@@ -662,7 +662,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 131573410
+              "duration": 119229467
             }
           },
           {
@@ -675,7 +675,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 379077181
+              "duration": 383783350
             }
           },
           {
@@ -684,11 +684,11 @@
             "line": 53,
             "name": "je creer un post avec \"titre\" et \"\" et je clique sur le bouton save",
             "match": {
-              "location": "step-definitions/post.steps.ts:9"
+              "location": "step-definitions/post.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 192099759
+              "duration": 174083785
             }
           },
           {
@@ -697,11 +697,11 @@
             "line": 54,
             "name": "un message derreur saffiche",
             "match": {
-              "location": "step-definitions/post.steps.ts:20"
+              "location": "step-definitions/post.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 197630533
+              "duration": 107208492
             }
           },
           {
@@ -709,7 +709,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 50219915
+              "duration": 63028387
             }
           }
         ],
