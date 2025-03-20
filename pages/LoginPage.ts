@@ -11,6 +11,7 @@ class LoginPage {
         usernameInput: () => this.page.locator('input[name="username"]'),
         passwordInput: () => this.page.locator('input[name="password"]'),
         submitButton: () => this.page.locator('input[type="submit"]'),
+
         continueButton: () => this.page.locator('span:text("Continue")'),
         errorMessage: () => this.page.locator('.errornote'),
         dashboardTitle: () => this.page.locator('#site-name'),

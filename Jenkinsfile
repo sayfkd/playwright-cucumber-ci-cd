@@ -19,7 +19,7 @@ pipeline {
                     if (params.ENVIRONMENT == 'all') {
                         sh 'npx cucumber-js --config cucumber.js'
                     } else if (params.ENVIRONMENT == 'ignore') {
-                        sh "TAGS=' not @${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
+                        sh "TAGS='not @${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
                     }
                     else {
                         sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
