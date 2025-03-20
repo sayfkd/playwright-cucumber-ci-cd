@@ -17,12 +17,12 @@ pipeline {
                     sh 'npm ci'
                     
                     if (params.ENVIRONMENT == 'all') {
-                        sh 'npx cucumber-js --config cucumber.js'
+                        sh 'npx cucumber-js --config cucumber.js --format allure-cucumberjs/reporter'
                     } else if (params.ENVIRONMENT == 'ignore') {
-                        sh "TAGS='not @${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
+                        sh "TAGS='not @ignore' npx cucumber-js --config cucumber.js --format allure-cucumberjs/reporter"
                     }
                     else {
-                        sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
+                        sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js --format allure-cucumberjs/reporter"
                     }
                     //sh 'npx cucumber-js --format json:reports/cucumber-report.json'
                     //sh "npx cucumber-js --tags @${params.ENVIRONMENT} --format json:reports/cucumber-report.json"
