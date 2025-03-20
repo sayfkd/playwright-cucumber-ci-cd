@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choice(name: 'ENVIRONMENT', choices: ['env1', 'env2', 'all'], description: 'Sélectionnez l\'environnement')
+        choice(name: 'ENVIRONMENT', choices: ['env1', 'env2', 'all', 'ignore'], description: 'Sélectionnez l\'environnement')
     }
     stages {
         stage('build and install') {
@@ -18,7 +18,10 @@ pipeline {
                     
                     if (params.ENVIRONMENT == 'all') {
                         sh 'npx cucumber-js --config cucumber.js'
-                    } else {
+                    } else if (params.ENVIRONMENT == 'ignore') {
+                        sh "TAGS=' not @${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
+                    }
+                    else {
                         sh "TAGS='@${params.ENVIRONMENT}' npx cucumber-js --config cucumber.js"
                     }
                     //sh 'npx cucumber-js --format json:reports/cucumber-report.json'

@@ -2,7 +2,7 @@ import { Given, When, Then } from '@cucumber/cucumber';
 import { expect, Page } from '@playwright/test';
 import CreatePost from '../pages/CreatePost';
 import DashboardPage from '../pages/Dashboard'; 
-import PostUtils from '../utils/PostUtils';
+import dataexchange from '../utils/dataexchange';
 
 let dashboardPage: DashboardPage;
 let createPost: CreatePost;
@@ -13,7 +13,7 @@ Then('je creer un post avec {string} et {string} et je clique sur le bouton save
     
     createPost = new CreatePost(this.page); 
     if(title != ""){
-        PostUtils.setTitreAvecRandom(titreAvecRandom);
+        dataexchange.set('titre',titreAvecRandom);
     }
     await createPost.createPost(titreAvecRandom, content);
 });
@@ -28,3 +28,4 @@ Then('un message derreur saffiche', async function () {
     const errorMessage = await createPost.getErrorMessage();
     expect(errorMessage).toContain("Please correct");
  });
+

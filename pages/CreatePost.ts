@@ -13,6 +13,7 @@ class CreatePost {
         ContentInpute : () => this.page.getByRole('textbox', { name: 'content:' }),
         SubmitButton : () => this.page.getByRole('button', { name: 'Save', exact: true }),
         errorMessage: () => this.page.locator('.errornote')
+
     };
 
     async createPost(title: string, content: string) {
@@ -20,7 +21,7 @@ class CreatePost {
         await this.elements.ContentInpute().fill(content);
         await this.elements.SubmitButton().click();
     }
-    
+
     async getErrorMessage(): Promise<string | null> {
         return await this.elements.errorMessage().textContent();
     }
