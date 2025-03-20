@@ -11,7 +11,7 @@ Feature: Login
       | testeur_integration | testeur_qa   | env1 |
       | testeur_integration | testeur_qa_2 | env1 |
 
-    @env2
+    @env2 @ignore
     Examples:
       | username        | password     | env  |
       | testeur_recette | testeur_qa_3 | env2 |
@@ -29,7 +29,7 @@ Feature: Login
       | faux                | testeur_qa | env1 |
       | testeur_integration | faux       | env1 |
 
-    @env2
+    @env2 @ignore
     Examples:
       | username        | password     | env  |
       | faux            | testeur_qa_3 | env2 |

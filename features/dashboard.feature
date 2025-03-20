@@ -1,5 +1,4 @@
 
-@ignore
 Feature: Dashboard
 
   Scenario Outline: Create post button
